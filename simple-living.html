@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Living</title>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="icon", type="image/x-icon", href="assets/crown-dark.png">
+   <link href ="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <div class="nav-container">
+        <div class="brand-label">
+          <img src="assets/crown-dark.png" alt="Crown Logo" />
+          <span>Declutter <span class="highlight">Queen</span></span>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+          <li><a href="space-savers.html">Space Savers</a></li>
+          <li><a href="simple-living.html">Simple Living</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+<h1 style="text-align: center; margin-top: 50px;">Simple Living Tips for a Calm, Clutter-Free Home</h1>
+<!-- Section Title -->
+<p style="text-align: center; max-width: 700px; margin: 10px auto 40px; font-size: 1.1em; color: #555;">
+A calm, organized home starts with simple habits and intentional storage. These small-space strategies bring ease, clarity, and flow—especially in shared or compact rooms.
+</p>
+
+<!-- Tip Container -->
+<div class="calm-tips">
+  <div class="calm-tip fade-in">
+    <span class="icon">🧺</span>
+    <div>
+      <h3>Declutter What You Don’t Use or Love</h3>
+      <p>Let go of excess. Keep only what serves a purpose or adds joy. Smart compact storage starts with intentional editing of your space.</p>
+    </div>
+  </div>
+
+  <div class="calm-tip fade-in">
+    <span class="icon">👕</span>
+    <div>
+      <h3>Create a Capsule Wardrobe</h3>
+      <p>A minimalist wardrobe cuts clutter and simplifies routines. Choose timeless, functional pieces that work across seasons and small bedroom layouts.</p>
+    </div>
+  </div>
+
+  <div class="calm-tip fade-in">
+    <span class="icon">⏱️</span>
+    <div>
+      <h3>Set a 10-Minute Declutter Habit</h3>
+      <p>Schedule a quick weekly reset to keep drawers, nightstands, or shelves tidy. These small resets prevent buildup in tight or shared spaces.</p>
+    </div>
+  </div>
+
+  <div class="calm-tip fade-in">
+    <span class="icon">🪴</span>
+    <div>
+      <h3>Use Multi-Functional Decor</h3>
+      <p>Choose trays, crates, or baskets that double as storage. These calm home accents reduce surface clutter while keeping your small space organized and stylish.</p>
+    </div>
+  </div>
+</div>
+</section>
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="assets/crown-dark.png" alt="Declutter Queen Logo">
+      <span>Declutter <span class="highlight">Queen</span></span>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      <li><a href="space-savers.html">Space Savers</a></li>
+      <li><a href="simple-living.html">Simple Living</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-note">Helping you reclaim space and peace of mind.</p>
+    <p class="copyright">© 2025 Declutter Queen. All rights reserved.</p>
+  </div>
+</footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

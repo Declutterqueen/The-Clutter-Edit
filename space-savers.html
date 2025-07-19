@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Savers</title>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="icon", type="image/x-icon", href="assets/crown-dark.png">
+  <link href ="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+
+<style>
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+
+  .card {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 430px;
+    flex: 1 1 45%;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+
+  @media (max-width: 768px) {
+    .card-section {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      max-width: 100%;
+    }
+  }
+</style>
+
+
+</head>
+<body>
+<header class="navbar">
+    <nav>
+      <div class="nav-container">
+        <div class="brand-label">
+          <img src="assets/crown-dark.png" alt="Crown Logo" />
+          <span>Declutter <span class="highlight">Queen</span></span>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+          <li><a href="space-savers.html">Space Savers</a></li>
+          <li><a href="simple-living.html">Simple Living</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+<h1>Top Space-Saving Ideas for Small Bedrooms</h1>
+<div class="card-section">
+
+  <div class="card">
+    <img src="assets/under-bed-storage.jpg" alt="Smart under-bed storage in narrow shared bedroom">
+    <div class="card-content">
+      <h3>Maximize Under-Bed Storage</h3>
+      <p>Use the space under your bed to store out-of-season clothing, extra linens, or shoes. Clear bins or rolling drawers offer hidden storage without taking up any extra square footage—perfect for shared or narrow bedrooms.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="assets/floating-shelves.jpg" alt="Floating shelves for vertical storage in compact bedroom">
+    <div class="card-content">
+      <h3>Take Advantage of Vertical Storage</h3>
+      <p>Mount floating shelves on blank walls to keep essentials within reach and off the floor. This smart compact storage trick works especially well in small bedrooms where floor space is limited but wall space is available.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="assets/bed-with-drawers.jpg" alt="Built-in drawer bed for compact bedroom storage">
+    <div class="card-content">
+      <h3>Choose a Bed with Built-In Drawers</h3>
+      <p>Upgrade to a storage bed with built-in drawers underneath. It offers a clean, clutter-free solution for storing clothing, bedding, or personal items—ideal for small shared rooms where every inch matters.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="assets/door-hooks.jpg" alt="Behind-the-door hooks for space-saving in shared bedroom">
+    <div class="card-content">
+      <h3>Use the Back of the Door for Accessories</h3>
+      <p>Install hooks or racks behind your bedroom door to hang bags, scarves, or accessories. It’s a smart and subtle way to gain extra storage without adding furniture—great for compact bedrooms.</p>
+    </div>
+  </div>
+
+</div>
+</section>
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="assets/crown-dark.png" alt="Declutter Queen Logo">
+      <span>Declutter <span class="highlight">Queen</span></span>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      <li><a href="space-savers.html">Space Savers</a></li>
+      <li><a href="simple-living.html">Simple Living</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-note">Helping you reclaim space and peace of mind.</p>
+    <p class="copyright">© 2025 Declutter Queen. All rights reserved.</p>
+  </div>
+</footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
